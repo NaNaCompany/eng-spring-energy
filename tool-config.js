@@ -1,0 +1,49 @@
+export const tool={
+  "id": "E068",
+  "slug": "eng-spring-energy",
+  "title": "스프링 저장에너지 계산기",
+  "title_en": "Spring Potential Energy Calculator",
+  "category": "역학",
+  "category_en": "Mechanics",
+  "fields": [
+    {
+      "key": "k",
+      "label": "선형 스프링 강성 k",
+      "label_en": "Linear spring stiffness k",
+      "dimension": "stiffness",
+      "example": 100,
+      "constraint": "positive",
+      "display_unit": "Nm",
+      "display_value": "100"
+    },
+    {
+      "key": "x",
+      "label": "평형점 기준 변위 x",
+      "label_en": "Displacement from equilibrium x",
+      "dimension": "length",
+      "example": 0.2,
+      "constraint": "signed",
+      "display_unit": "m",
+      "display_value": "0.2"
+    }
+  ],
+  "result_label": "탄성 저장에너지 U",
+  "result_label_en": "Elastic stored energy U",
+  "result_dimension": "energy",
+  "formula": "U = ½kx²",
+  "purpose": "평형점에서 늘이거나 압축한 선형 스프링 에너지 계산",
+  "purpose_en": "Calculate energy stored in a stretched or compressed linear spring.",
+  "assumptions": "k>0. x는 무변형 평형점 기준의 부호 있는 변위다. 후크 법칙 범위의 보존적 선형 스프링을 가정하고 소성·히스테리시스·감쇠는 제외한다.",
+  "assumptions_en": "Required: k>0 and signed displacement from the undeformed equilibrium. Conservative linear Hooke-law spring. Excluded: plasticity, hysteresis and damping.",
+  "sources": [
+    {
+      "label": "OpenStax · 8 1 potential energy of a system",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system"
+    }
+  ],
+  "condition": "",
+  "condition_en": "",
+  "site": "https://nanalab.kr/eng-spring-energy/",
+  "repository": "https://github.com/NaNaCompany/eng-spring-energy",
+  "output_unit": "J"
+};
